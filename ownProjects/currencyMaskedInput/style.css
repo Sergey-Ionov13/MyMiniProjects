@@ -1,0 +1,45 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: radial-gradient(white, #ccc);
+}
+h1 {
+    text-align: center;
+    color: #344;
+}
+
+form {
+    display: inline-block;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.inputs {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.inputs input {
+    outline: none;
+    padding: 0.25em;
+    border: 2px solid grey;
+    border-radius: 0.5em;
+}
+.inputs input:focus {
+    border-color: #BF3030;
+    box-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px #BF3030;
+}
+.inputs input[currency]:focus {
+    border-color: #269926;
+    box-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px #269926;
+}
+.label > label {
+    color: #BF3030;
+}
+.label > .currency {
+    color: #269926;
+}

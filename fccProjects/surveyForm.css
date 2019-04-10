@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background-color: #a5d6ce;
+  text-align: center;
+  padding-left: 78px;
+  padding-right: 78px;
+}
+
+main {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-flex {
+  display: flex;
+  margin-bottom: 10px;
+}
+.left-box {
+  width: 46.5%;
+  text-align: right;
+  margin: 5px 10px 5px 50px;
+}
+.right-box {
+  width: 53.5%;
+  text-align: left;
+  margin: 5px 50px 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+input {
+  margin: 0;
+  padding: 0.5em;
+}
+.oneline {
+  padding-top: 5px;
+}
+
+.nea {
+  max-width: 17em;
+}
+#name, #email, #number {
+  width: 100%;
+}
+select {
+  padding: 0.5em 0.4em;
+  margin-bottom: 10px;
+  width: 10.5em;
+}
+
+button {
+  color: #fff;
+  font-size: 1.05em;
+  background-color: #5ad;
+  padding: 0.5em 1.3em;
+  border-style: none;
+  border-radius: 3px;
+}
+#description {
+  padding-bottom: 5px;
+}
+.add-margin-top {
+  margin-top: 25px;;
+}
+.checkboxes {
+  margin-bottom: 15px;
+}
+.textarea-box {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  main {
+    min-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .h-flex {
+    flex-direction: column;
+  }
+
+  .left-box {
+    width: 100%;
+    text-align: left;
+    margin: 5px 10px 5px 5px;
+  }
+  .right-box {
+    width: 100%;
+    text-align: left;
+    margin: 5px 50px 5px 10px;
+  }
+  .nea {
+    max-width: 15em;
+  }
+}

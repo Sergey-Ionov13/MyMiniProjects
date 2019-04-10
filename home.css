@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat+Alternates|PT+Sans');
+@import url("icons/style.css");
+
+/*----- Объявление переменных и присваивание им значений -----*/
+:root {
+  /* Colors */
+  --header-footer-color: rgba(228, 228, 203, 0.95);
+  --main-background-color: #F5F5DC;
+  --main-font-color: #78727B;
+  --border: #B8B5AA;
+  --button-background: #ECF2DF;
+  --button-font-color: #799543;
+  --interframe-color: #DDE5CD;
+  --freeCodeCamp: #006400;
+  --shadow-white: #FAFAEC;
+  --shadow-purple: #56306A;
+  /* fonts */
+  --main-font:  'Comfortaa', cursive;
+  --header-font: 'Montserrat Alternates', sans-serif;
+  --footer-font: 'PT Sans', sans-serif;
+}
+
+/*----- Сброс отступов и общие неизменные стили -----*/
+* {transition: .3s ease-in-out;}
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-background-color);
+  color: var(--main-font-color);
+  line-height: 1.25;
+  box-sizing: border-box;
+}
+h1, h2, h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.fcc {
+  color: var(--freeCodeCamp);
+  font-weight: 600;
+  text-decoration: none;
+}
+abbr {
+  text-decoration: none;
+  font-weight: bold;
+}
+.icon-phone {
+  color: #007633;
+}
+.icon-envelop {
+  color: #A60C00;
+}
+.icon-facebook2 {
+  color: #04346C;
+  font-size: 50px;
+}
+.icon-vk {
+  color: #4284D3;
+  font-size: 50px;
+}
+.icon-github {
+  color: #000;
+  font-size: 50px;
+}
+.icon-linkedin {
+  color: #0E53A7;
+  font-size: 50px;
+}
+
+
+
+/*----- Основные стили -----*/
+/*----- Шапка -----*/
+#head {
+  font-family: var(--header-font);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: inherit;
+  padding: 10px;
+  background-color: var(--header-footer-color);
+}
+#logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  margin-right: 7px;
+  background-color: var(--border);
+  border-radius: 50%;
+}
+#logo > a {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: var(--button-font-color);
+  background-color: var(--button-background);
+  border-radius: 50%;
+}
+#logo > a:hover {
+  color: var(--shadow-white);
+  box-shadow: 0 0 10px 3px var(--main-font-color);
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--freeCodeCamp), 0 0 15px var(--freeCodeCamp),
+  0 0 20px var(--freeCodeCamp), 0 0 25px var(--freeCodeCamp), 0 0 30px var(--freeCodeCamp), 0 0 35px var(--freeCodeCamp), 0 0 40px var(--freeCodeCamp);
+}
+#nav-toggle {
+  display: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--freeCodeCamp);
+}
+#nav-toggle > div {
+  position: absolute;
+  top: 23px;
+  left: 8px;
+  right: 8px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-background-color);
+}
+#nav-toggle > div:before, #nav-toggle > div:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--main-background-color);
+}
+#nav-toggle > div:before {
+  top: -15px;
+}
+#nav-toggle > div:after {
+  bottom: -15px;
+}
+#nav-bar {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#nav-bar > .bookmarks:first-child {
+  margin-left: 0;
+}
+#nav-bar > .bookmarks {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  margin-left: 10px;
+  padding: 7px 15px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: var(--button-font-color);
+  border-radius: 15px;
+  cursor: pointer;
+}
+#nav-bar > .bookmarks:hover {
+  box-shadow: 1px 1px 3px 0 var(--main-font-color);
+}
+
+
+
+/*----- Основное содержимое -----*/
+main {
+  margin-top: 56px;
+  margin-bottom: 52px;
+  padding: 1em;
+}
+.welcome-section {
+  min-width: 60%;
+  min-height: 60px;
+  margin: 20px auto 35px;
+}
+.projects-section {
+  width: 70%;
+  margin: 0 auto;
+  background-color: var(--interframe-color);
+  border: 1px solid var(--border);
+  border-radius: 25px;
+}
+.inner-border {
+  display: block;
+  margin: 5px;
+  padding: 10px 10px;
+  background-color: var(--main-background-color);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+.main-text {
+  text-indent: 0.8em;
+  margin: 0 0 10px;
+}
+.main-image {
+  width: 100%;
+  margin-bottom: -4px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+/*----- Стили страниц -----*/
+
+/*----- Главная -----*/
+.home .container, .home .main-image, .home .main-text {
+  transform: scaleY(-1);
+}
+.home .main-text {
+  margin-bottom: 0;
+}
+.home .main-image {
+  margin-bottom: 10px;
+}
+
+/*----- Обо мне -----*/
+#nav-bar > .about-me.active, #nav-bar > .about-me.active:hover {
+  box-shadow: inset 2px 2px 5px var(--border), 1px 1px 5px var(--main-background-color);
+}
+#nav-bar > .about-me.active:hover {
+  color: var(--shadow-white);
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--shadow-purple), 0 0 15px var(--shadow-purple), 0 0 20px var(--shadow-purple);
+}
+.about-me .main-image {
+  float: left;
+  width: 50%;
+  max-width: 200px;
+  margin: 0 15px 15px 0;
+  border-radius: 10px 0 0 0;
+}
+.about-me .main-text:last-child {
+  margin-bottom: 0;
+}
+
+/*----- Портфолио -----*/
+#nav-bar > .portfolio.active, #nav-bar > .portfolio.active:hover {
+  box-shadow: inset 2px 2px 5px var(--border), 1px 1px 5px var(--main-background-color);
+}
+#nav-bar > .portfolio.active:hover {
+  color: var(--shadow-white);
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--shadow-purple), 0 0 15px var(--shadow-purple), 0 0 20px var(--shadow-purple);
+}
+.portfolio .inner-border {
+  text-align: center;
+  padding: 50px 0;
+}
+.portfolio .container {
+  display: inline-block;
+}
+.portfolio .projects-subsection {
+  display: inline-block;
+  margin: 10px;
+  line-height: 0;
+}
+.portfolio .projects-subsection.real-projects {
+  display: none;
+}
+.portfolio .projects-subsection > img {
+  max-width: 200px;
+  border-radius: 20%;
+}
+.portfolio .container > .fcc-projects:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--freeCodeCamp), 0 0 15px var(--freeCodeCamp),
+  0 0 20px var(--freeCodeCamp), 0 0 30px var(--freeCodeCamp), 0 0 50px var(--freeCodeCamp);
+}
+.portfolio .container > .own-projects:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--button-font-color), 0 0 15px var(--button-font-color),
+  0 0 20px var(--button-font-color), 0 0 30px var(--button-font-color), 0 0 50px var(--button-font-color);
+}
+.portfolio .container > .real-projects:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--border), 0 0 15px var(--border),
+  0 0 20px var(--border), 0 0 30px var(--border), 0 0 50px var(--border);
+}
+/*---------- Собственные проекты ----------*/
+.container > .own-projects-container {
+  background-color: rgba(205, 198, 209, 0.3);/*var(--header-footer-color)*/;
+  padding: 20px 20px;
+}
+.own-projects-container > .projects-subsection > img {
+  max-width: 160px;
+}
+/* bootstrap, js hover */
+.container .bootstrap:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px rgb(100, 65, 147), 0 0 15px rgb(100, 65, 147),
+  0 0 20px rgb(100, 65, 147), 0 0 30px rgb(100, 65, 147), 0 0 50px rgb(100, 65, 147);
+}
+.container .js:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px rgb(247, 223, 29), 0 0 15px rgb(247, 223, 29),
+  0 0 20px rgb(247, 223, 29), 0 0 30px rgb(247, 223, 29), 0 0 50px rgb(247, 223, 29);
+}
+/* bootstrap-projects hover */
+.container .ip-project:hover > img, .container .photoalbum-project:hover > img {
+  box-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px rgb(85, 85, 85), 0 0 15px rgb(85, 85, 85),
+  0 0 20px rgb(85, 85, 85), 0 0 30px rgb(85, 85, 85), 0 0 50px rgb(85, 85, 85);
+}
+/* currency-projects hover */
+.container .currency-project:hover > img {
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #ccc, 0 0 15px #ccc,
+  0 0 20px #ccc, 0 0 30px #ccc, 0 0 50px #ccc;
+}
+.bootstrap-container > .projects-subsection > img,
+.js-container > .projects-subsection > img {
+  max-width: 250px;
+  border-radius: 0.8em;
+}
+
+/*----- Контакты -----*/
+#nav-bar > .contacts.active, #nav-bar > .contacts.active:hover {
+  box-shadow: inset 2px 2px 5px var(--border), 1px 1px 5px var(--main-background-color);
+}
+#nav-bar > .contacts.active:hover {
+  color: var(--shadow-white);
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--shadow-purple), 0 0 15px var(--shadow-purple), 0 0 20px var(--shadow-purple);
+}
+.contacts .main-text {
+  text-indent: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contacts .inner-border {
+  padding: 50px 0;
+}
+.contacts .call-me {
+  list-style: none;
+  width: 230px;
+  padding: 0;
+  margin: 0 auto 40px;
+}
+.contacts .call-me > li:first-child {margin-bottom: 5px;}
+.contacts .call-me a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.contacts .call-me a:hover .ic-desc{
+  color: var(--shadow-white);
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px var(--shadow-purple), 0 0 15px var(--shadow-purple), 0 0 20px var(--shadow-purple);
+}
+.contacts .call-me .ic-desc {
+  color: var(--main-font-color);
+}
+.contacts .social-box {
+  max-width: 300px;
+  margin: 20px auto 10px;
+  text-align: center;
+}
+.contacts .social-box > a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 20px 10px 0;
+}
+.contacts .social-box > .icon-facebook2:hover  {
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px #04346C, 0 0 15px #04346C, 0 0 20px #04346C;
+}
+.contacts .social-box > .icon-vk:hover  {
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px #4284D3, 0 0 15px #4284D3, 0 0 20px #4284D3;
+}
+.contacts .social-box > .icon-github:hover  {
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+}
+.contacts .social-box > .icon-linkedin:hover  {
+  text-shadow: 0 0 2px var(--shadow-white), 0 0 5px var(--shadow-white), 0 0 10px #0E53A7, 0 0 15px #0E53A7, 0 0 20px #0E53A7;
+}
+
+
+
+/*----- Подвал -----*/
+footer {
+  font-family: var(--footer-font);
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: inherit;
+  padding: 1em;
+  background-color: var(--header-footer-color);
+}
+footer > p {
+  text-align: center;
+  margin: 0;
+}
+footer > p > abbr {
+  color: var(--freeCodeCamp);
+}
+
+
+
+/*----- Медиа запросы -----*/
+@media (max-width: 768px) {
+  #head {
+    top: auto;
+    bottom: 0;
+    background: none;
+    text-align: right;
+    height: 0;
+    transform: scaleY(-1);
+  }
+  footer {
+    display: none;
+  }
+  #logo > a, #nav-bar > .bookmarks {display: block}
+  #logo {
+    display: inline-block;
+    position: absolute;
+    right: 155px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    opacity: 0;
+    margin: -60px 0 0;
+    transform: scaleY(-1);
+    background-color: var(--border);
+  }
+  #logo > a {
+    font-size: 23px;
+    line-height: 40px;
+    color: var(--main-background-color);
+    background-color: var(--freeCodeCamp);
+  }
+  #logo.visible {
+    opacity: 1;
+    margin: 0;
+  }
+  #nav-bar {
+    display: block;
+    opacity: 0;
+    width: 182px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: -200px;
+    transform: scaleY(-1);
+    border-radius: 10px;
+  }
+  #nav-bar > .bookmarks {
+    width: 152px;
+    text-align: center;
+    border-bottom: 1px solid var(--main-background-color);
+    font-size: 20px;
+    padding: 14px 15px;
+    margin-left: 0;
+    margin-top: 5px;
+    color: var(--main-background-color);
+    border-radius: 0;
+  }
+  #nav-bar > .bookmarks:last-child {
+    border: none;
+  }
+  #nav-bar > .bookmarks:first-child {
+    margin-top: 0;
+  }
+  #nav-toggle {
+    display: inline-block;
+    line-height: 36px;
+    vertical-align: middle;
+  }
+  #nav-bar.visible {
+    opacity: 1;
+    margin-right: 0;
+    background-color: var(--freeCodeCamp);
+  }
+
+  .welcome-section, .projects-section {
+    width: 100%;
+    border: none;
+    background-color: var(--main-background-color);
+  }
+  main {
+    margin-top: 0;
+  }
+  .inner-border {
+    margin: 0;
+    border: none;
+  }
+  .main-image {
+    border-radius: 0;
+  }
+
+  .about-me .main-image {border-radius: 0;}
+  #nav-bar > .about-me.active, #nav-bar > .about-me.active:hover,
+  #nav-bar > .portfolio.active, #nav-bar > .portfolio.active:hover,
+  #nav-bar > .contacts.active, #nav-bar > .contacts.active:hover {
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  .portfolio .container > .projects-subsection > img {
+    max-width: 100px;
+  }
+  .own-projects-container > .projects-subsection > img {
+    max-width: 80px;
+  }
+}

@@ -1,0 +1,291 @@
+body {
+    background-color: #323232;
+}
+
+
+/* Панель навигации */
+.navbar {
+    margin-bottom: 0.5em;
+}
+.navbar .divider {
+    background-color: grey;
+}
+.navbar .nav li a.active {
+background-color: #151919;
+}
+.dropdown-menu {
+    background-color: #303030;
+}
+.dropdown-menu li a {
+    background-color: #303030;
+    color: #808080;
+}
+.dropdown-menu li a:hover {
+    background-color: #303030;
+    color: #ffffff;
+}
+.row {
+    background-color: #323232;
+}
+@media (max-width: 1200px) {
+    .speed {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .dropdown-menu {
+        padding: 0;
+    }
+    .navbar-nav .open .dropdown-menu > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .dropdown-menu .divider {
+        margin: 0;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-fixed-bottom {
+        bottom: auto;
+        top: 0;
+    }
+}
+
+
+/* Кнопки переключения скорости слайдшоу */
+.navbar-btn {
+    display: none;
+}
+.navbar-btn .btn-default {
+    background-color: #303030;
+    color: #808080;
+    border-color: black;
+}
+.navbar-btn .btn-default:hover {
+    color: #ffffff;
+}
+.navbar-btn .btn-default:active,
+.navbar-btn .btn-default:focus {
+    border: 1px solid black;
+    outline: none;
+}
+.navbar-btn .btn-default:active {
+    background-color: black;
+}
+.navbar-btn .glyphicon-minus {
+    color: #800002;
+}
+.navbar-btn .glyphicon-plus {
+    color: #020080;
+}
+.navbar-brand {
+    padding-top: 0.6em;
+}
+.navbar-btn:hover > .btn-speed:disabled {
+    cursor: default;
+    background-color: #303030;
+    color: #808080;
+}
+
+
+/* Слайдер */
+.container-fluid {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+#mainImg {
+    margin-top: 3.65em;
+    min-width: 60px;
+    min-height: 40px;
+}
+.cover {
+    margin-top: 0.5em;
+}
+#carousel {
+    display: none;
+}
+.carousel .item img {
+    border-radius: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.carousel .item .carousel-caption {
+    color: #88ee99;
+    padding: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+.carousel-caption h4 {
+    color: #66eeff;
+}
+.carousel-control {
+    background-image: none !important;
+}
+@media (max-width: 576px) {
+    .carousel .item img {
+        border-radius: 0;
+    }
+}
+@media (min-width: 768px) {
+    .container-fluid {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*iconPack*/
+@font-face {
+    font-family: 'sionov-first-icon-pack';
+    src:  url('fonts/sionov-first-icon-pack.eot?z1zzhz');
+    src:  url('fonts/sionov-first-icon-pack.eot?z1zzhz#iefix') format('embedded-opentype'),
+    url('fonts/sionov-first-icon-pack.ttf?z1zzhz') format('truetype'),
+    url('fonts/sionov-first-icon-pack.woff?z1zzhz') format('woff'),
+    url('fonts/sionov-first-icon-pack.svg?z1zzhz#sionov-first-icon-pack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sionov-first-icon-pack' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.myFirstandroid:before {
+    content: "\e900";
+    color: #a4c639;
+}
+.myFirstapple:before {
+    content: "\e901";
+    color: #999;
+}
+.myFirstfacebook:before {
+    content: "\e902";
+    color: #3b5998;
+}
+.myFirstinstagram:before {
+    content: "\e903";
+    color: #e4405f;
+}
+.myFirstlinkedin:before {
+    content: "\e904";
+    color: #0077b5;
+}
+.myFirstmessenger:before {
+    content: "\e905";
+    color: #0084ff;
+}
+.myFirstodnoklassniki:before {
+    content: "\e906";
+    color: #f4731c;
+}
+.myFirstskype:before {
+    content: "\e907";
+    color: #00aff0;
+}
+.myFirsttelegram:before {
+    content: "\e908";
+    color: #2ca5e0;
+}
+.myFirsttwitter:before {
+    content: "\e909";
+    color: #1da1f2;
+}
+.myFirstunsplash:before {
+    content: "\e90a";
+    color: #447755;
+    font-size: 1.5em;
+}
+.myFirstviber:before {
+    content: "\e90b";
+    color: #665cac;
+}
+.myFirstvk:before {
+    content: "\e90c";
+    color: #6383a8;
+}
+.myFirstwhatsapp:before {
+    content: "\e90d";
+    color: #25d366;
+}
+.myFirsthome3:before {
+    content: "\e90e";
+}
+.myFirstquill:before {
+    content: "\e90f";
+}
+.myFirstimage:before {
+    content: "\e910";
+}
+.myFirstimages:before {
+    content: "\e911";
+}
+.myFirstcamera:before {
+    content: "\e912";
+}
+.myFirstheadphones:before {
+    content: "\e913";
+}
+.myFirstmusic:before {
+    content: "\e914";
+}
+.myFirstfilm:before {
+    content: "\e915";
+}
+.myFirstvideo-camera:before {
+    content: "\e916";
+}
+.myFirstfolder:before {
+    content: "\e92f";
+}
+.myFirstfolder-open:before {
+    content: "\e930";
+}
+.myFirstenvelop:before {
+    content: "\e945";
+}
+.myFirstdisplay:before {
+    content: "\e956";
+}
+.myFirstlaptop:before {
+    content: "\e957";
+}
+.myFirstmobile:before {
+    content: "\e958";
+}
+.myFirsttablet:before {
+    content: "\e95a";
+}
+.myFirstdatabase:before {
+    content: "\e964";
+}
+.myFirstundo:before {
+    content: "\e965";
+}
+.myFirstredo:before {
+    content: "\e966";
+}
+.myFirstspinner9:before {
+    content: "\e982";
+}
+.myFirstzoom-in:before {
+    content: "\e987";
+}
+.myFirstzoom-out:before {
+    content: "\e988";
+}
+.myFirstshare2:before {
+    content: "\ea82";
+}

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'sionov-first-icon-pack';
+  src:  url('fonts/sionov-first-icon-pack.eot?z1zzhz');
+  src:  url('fonts/sionov-first-icon-pack.eot?z1zzhz#iefix') format('embedded-opentype'),
+    url('fonts/sionov-first-icon-pack.ttf?z1zzhz') format('truetype'),
+    url('fonts/sionov-first-icon-pack.woff?z1zzhz') format('woff'),
+    url('fonts/sionov-first-icon-pack.svg?z1zzhz#sionov-first-icon-pack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sionov-first-icon-pack' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.myFirstandroid:before {
+  content: "\e900";
+  color: #a4c639;
+}
+.myFirstapple:before {
+  content: "\e901";
+  color: #999;
+}
+.myFirstfacebook:before {
+  content: "\e902";
+  color: #3b5998;
+}
+.myFirstinstagram:before {
+  content: "\e903";
+  color: #e4405f;
+}
+.myFirstlinkedin:before {
+  content: "\e904";
+  color: #0077b5;
+}
+.myFirstmessenger:before {
+  content: "\e905";
+  color: #0084ff;
+}
+.myFirstodnoklassniki:before {
+  content: "\e906";
+  color: #f4731c;
+}
+.myFirstskype:before {
+  content: "\e907";
+  color: #00aff0;
+}
+.myFirsttelegram:before {
+  content: "\e908";
+  color: #2ca5e0;
+}
+.myFirsttwitter:before {
+  content: "\e909";
+  color: #1da1f2;
+}
+.myFirstunsplash:before {
+  content: "\e90a";
+}
+.myFirstviber:before {
+  content: "\e90b";
+  color: #665cac;
+}
+.myFirstvk:before {
+  content: "\e90c";
+  color: #6383a8;
+}
+.myFirstwhatsapp:before {
+  content: "\e90d";
+  color: #25d366;
+}
+.myFirsthome3:before {
+  content: "\e90e";
+}
+.myFirstquill:before {
+  content: "\e90f";
+}
+.myFirstimage:before {
+  content: "\e910";
+}
+.myFirstimages:before {
+  content: "\e911";
+}
+.myFirstcamera:before {
+  content: "\e912";
+}
+.myFirstheadphones:before {
+  content: "\e913";
+}
+.myFirstmusic:before {
+  content: "\e914";
+}
+.myFirstfilm:before {
+  content: "\e915";
+}
+.myFirstvideo-camera:before {
+  content: "\e916";
+}
+.myFirstfolder:before {
+  content: "\e92f";
+}
+.myFirstfolder-open:before {
+  content: "\e930";
+}
+.myFirstenvelop:before {
+  content: "\e945";
+}
+.myFirstdisplay:before {
+  content: "\e956";
+}
+.myFirstlaptop:before {
+  content: "\e957";
+}
+.myFirstmobile:before {
+  content: "\e958";
+}
+.myFirsttablet:before {
+  content: "\e95a";
+}
+.myFirstdatabase:before {
+  content: "\e964";
+}
+.myFirstundo:before {
+  content: "\e965";
+}
+.myFirstredo:before {
+  content: "\e966";
+}
+.myFirstspinner9:before {
+  content: "\e982";
+}
+.myFirstzoom-in:before {
+  content: "\e987";
+}
+.myFirstzoom-out:before {
+  content: "\e988";
+}
+.myFirstshare2:before {
+  content: "\ea82";
+}

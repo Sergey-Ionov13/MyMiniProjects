@@ -1,0 +1,149 @@
+body {
+    background-color: #555;
+}
+strong.red {
+    font-size: 18px;
+    color: #e66;
+}
+.logo {
+    height: 70px;
+    padding: 10px;
+}
+.navbar li > a {
+    text-align: center;
+}
+.main-window {
+    margin-top: 70px;
+    padding-top: 15px;
+}
+.main-window > .row {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.demo-images {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.description-text {
+    background-color: #5d5d5d;
+    color: #9bc;
+    border-radius: 20px;
+    padding: 15px;
+}
+.description-text > .rubric:last-child {
+    margin: 0;
+}
+h3 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+    .row .vertical-align {
+        display: block; /* Turn off the flexible box layout */
+    }
+    .main-window {
+        margin-top: auto;
+        margin-bottom: 65px;
+    }
+}
+@media (min-width: 768px) {
+    .row .vertical-align {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-fixed-bottom {
+        bottom: auto;
+        top: 0;
+    }
+}
+@media (min-width: 992px) {
+    .userInput {
+        width: 92px;
+    }
+}
+
+label {
+    color: yellow;
+}
+p.rubric {
+    text-indent: 20px;
+    color: #acc;
+}
+p.cost {
+    font-size: 20px;
+    color: #9f8;
+}
+.sum {
+    font-size: 24px;
+}
+#license-main > div {
+    text-align: center;
+}
+
+#balancing-main, .balancing-calculate,
+#washing-main, .washing-calculate,
+#computation-main, .computation-calculate,
+#detailing-main, .detailing-calculate,
+#license-main, .cost-panel {
+    display: none;
+}
+
+#contacts {
+    margin: 20px auto;
+}
+h4, .phone, .email {
+    text-align: center;
+    color: #7bf;
+}
+.glyphicon,
+.glyphicon > a{
+    font-size: 18px;
+    color: #7bf;
+}
+
+@media (max-width: 767px) {
+    .phone, .email {
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .navbar > .container {
+        width: 100%;
+    }
+}
+@media (max-width: 862px) {
+    .logo {
+        height: 65px;
+        padding: 10px;
+    }
+    .navbar li > a {
+        font-size: 0.9em;
+        padding: 15px 10px 10px;
+    }
+}
+
+.photo-wrapper {
+    padding: 10px;
+}
+.photo-wrapper > img {
+    width: 100%;
+}
+
+.importantly {
+    border: 2px solid #3a5;
+    padding: 20px 20px 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.no-ready {
+    font-size: 20px;
+    color: #e33;
+}
+.float-left {
+    float: left;
+}

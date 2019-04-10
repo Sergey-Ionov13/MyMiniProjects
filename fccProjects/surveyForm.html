@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+
+<header>
+  <h1 id="title">Survey Form</h1>
+</header>
+
+<main>
+  <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+  <form id="survey-form" action="">
+    <div class="h-flex">
+      <div class="left-box oneline">
+        <label for="name" id="name-label">* Name:</label>
+      </div>
+      <div class="right-box">
+        <div class="nea">
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-flex">
+      <div class="left-box oneline">
+        <label for="email" id="email-label">* Email:</label>
+      </div>
+      <div class="right-box">
+        <div class="nea">
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-flex">
+      <div class="left-box oneline">
+        <label for="number" id="number-label">* Age:</label>
+      </div>
+      <div class="right-box">
+        <div class="nea">
+          <input type="number" id="number" placeholder="Age" min="1" max="125" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-flex">
+      <div class="left-box">
+        <label>Which option best describes your current role?</label>
+      </div>
+      <div class="right-box">
+        <select id="dropdown">
+          <option value="" disabled>Select an option</option>
+          <option value="Student" selected>Student</option>
+          <option value="Full time job">Full time job</option>
+          <option value="Full time learner">Full time learner</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="h-flex">
+      <div class="left-box">
+        <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="right-box">
+        <ul>
+          <li><input type="radio" value="Definitely" name="recommending"> Definitely</li>
+          <li><input type="radio" value="Maybe" name="recommending"> Maybe</li>
+          <li><input type="radio" value="Not sure" name="recommending"> Not sure</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="h-flex add-margin-top">
+      <div class="left-box">
+        <label>What do you like most in FCC:</label>
+      </div>
+      <div class="right-box">
+        <select id="dropdown1">
+          <option value="" disabled selected>Select an option</option>
+          <option value="Challenges">Challenges</option>
+          <option value="rojects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="h-flex checkboxes">
+      <div class="left-box">
+        <label>Things that should be improved in the future
+          (Check all that apply):</label>
+      </div>
+      <div class="right-box">
+        <ul>
+          <li><input type="checkbox" value="Front-end Projects" name="improve"> Front-end Projects</li>
+          <li><input type="checkbox" value="Back-end Projects" name="improve"> Back-end Projects</li>
+          <li><input type="checkbox" value="Data Visualization" name="improve"> Data Visualization</li>
+          <li><input type="checkbox" value="Challenges" name="improve"> Challenges</li>
+          <li><input type="checkbox" value="Open Source Community" name="improve"> Open Source Community</li>
+          <li><input type="checkbox" value="Gitter help rooms" name="improve"> Gitter help rooms</li>
+          <li><input type="checkbox" value="Videos" name="improve"> Videos</li>
+          <li><input type="checkbox" value="City Meetups" name="improve"> City Meetups</li>
+          <li><input type="checkbox" value="Wiki" name="improve"> Wiki</li>
+          <li><input type="checkbox" value="Forum" name="improve"> Forum</li>
+          <li><input type="checkbox" value="Additional Courses" name="improve"> Additional Courses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="h-flex textarea-box">
+      <div class="left-box">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="right-box">
+        <textarea id="comments" cols="38" rows="4" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+
+    <button id="submit" type="submit" value="Submit">Submit</button>
+  </form>
+</main>
+
+</body>
+</html>

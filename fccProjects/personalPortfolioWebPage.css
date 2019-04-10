@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Text Me One, sans-serif;
+  font-size: 18px;
+}
+h1, h2, h3, h4, p {
+  text-align: center;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 18px;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  background-color: #ddffff;
+}
+#navbar > #logo {
+  float: left;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background-color: #dde5e5;
+  border-radius: 50%;
+  margin: 7px 10px;
+}
+#logo > a {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+#navbar > #portfolio {
+  float: left;
+  margin: 18px 10px;
+}
+#navbar ul {
+  float: right;
+  list-style-type: none;
+  width: 450px;
+  padding: 0;
+  margin-right: -35px;
+}
+#navbar li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+a {
+  color: #007777;
+  font-weight: bold;
+  text-decoration: inherit;
+}
+
+
+
+#welcome-section {
+  margin: 50px 0 0 0;
+  background-color: #ddffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#welcome-section h2 {
+  margin: 0 0 5px;
+}
+#welcome-section p {
+  margin: 0;
+  color: green;
+  font-weight: bold;
+}
+
+
+
+main {
+  color: #007777;
+  text-align: center;
+  padding: 0;
+}
+#projects {
+  margin-top: 0;
+  background-color: #dde5e5;
+  padding: 20px 0 80px;
+}
+#projects h3 {
+  margin-top: 0;
+}
+#projects-grid a, .my-button, #contacts-grid a {
+  display: inline-block;
+}
+.project-tile {
+  display: inline-block;
+  height: 200px;
+  margin: 20px 100px 70px;
+}
+.img {
+  border: 2px solid #66AAAA;
+  height: 160px;
+  overflow: hidden;
+}
+.img img {
+  width: 275px;
+  margin: 0;
+}
+.img-caption {
+  border: 2px solid #66AAAA;
+  border-top: none;
+  height: 40px;
+  color: #007777;
+  background-color: #ececf2;
+}
+.img-caption h4 {
+  margin: 0;
+  line-height: 40px;
+}
+button {
+  border: 2px solid #7C7;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #cee;
+
+}
+button h4 {
+  margin: 0;
+  padding: 7px 60px;
+  color: #007777;
+}
+
+#contacts {
+  background-color: #cfc;
+  padding-top: 5px;
+}
+#contacts h2 {
+  margin-bottom: 0;
+  color: #057;
+}
+#contacts p {
+  margin-top: 5px;
+  margin-bottom: 75px;
+  font-weight: 600;
+  color: #046;
+}
+.call-me {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border: 2px solid #7C7;
+  border-radius: 50%;
+  margin: 20px 25px 100px;
+  background-color: #dff;
+}
+.call-me h4 {
+  line-height: 110px;
+  vertical-align: center;
+  margin: 0;
+}
+
+
+
+footer {
+  padding: 10px;
+  color: #dff;
+  background-color: #233640;
+}
+footer a {
+  color: #cc5;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+
+
+
+@media (max-width: 983px) {
+  main {
+    text-align: center;
+  }
+  .project-tile, .my-button {
+    display: block;
+  }
+  .project-tile {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

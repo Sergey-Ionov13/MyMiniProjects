@@ -30,7 +30,7 @@ buttonB.click(function () {
     const trvVal = trv.val(),
       sbvVal = sbv.val(),
       dbvVal = dbv.val(),
-      result = +trvVal * 5 + +sbvVal * 5 + +dbvVal * 20;
+      result = +trvVal * 5 + +sbvVal * 15 + +dbvVal * 20;
       balResult = result;
 
     if (isNaN(result)){
